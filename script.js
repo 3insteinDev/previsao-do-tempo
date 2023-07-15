@@ -25,13 +25,13 @@ function devolverDados(dados){
 
 	// Função que permite alterar a cor do número da temperatura de acordo com o seu valor
 	var temperatura = Math.floor(dados.main.temp)
-	if(temperatura < 0){
+	if(temperatura <= 0){
 		document.querySelector(".temperaturaNumero").setAttribute('style','color:rgba(10, 248, 244)')
-	}else if(0 < temperatura && temperatura < 10){
+	}else if(0 < temperatura && temperatura <= 10){
 			document.querySelector(".temperaturaNumero").setAttribute('style','color:rgb(78, 78, 139)')
-	}else if(10 < temperatura && temperatura < 20){
+	}else if(10 < temperatura && temperatura <= 20){
 		document.querySelector(".temperaturaNumero").setAttribute('style','color: rgb(251, 219, 159)')
-	}else if(20 < temperatura && temperatura < 35){
+	}else if(20 < temperatura && temperatura <= 35){
 		document.querySelector(".temperaturaNumero").setAttribute('style','color: orange')
 	}else{
 		document.querySelector(".temperaturaNumero").setAttribute('style','color: red')
