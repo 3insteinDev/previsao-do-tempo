@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://source.unsplash.com/1600x900/?technology");
+	background-size: cover;
+}
+
+/* Container maior */
+.container{
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 50px;
+	border-radius: 100px;
+	width: 90%;
+	max-width: 450px;
+}
+
+/* primeira parte do container */
+.input-cidade{
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 25px;
+	font-size: 20px;
+	background-color: #7c7c7c2b;
+	color: #ffffff;
+	width: calc(100% - 75px);
+	text-align: center;
+}
+.button-buscar{
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 50px;
+	background-color: #fbfb1721;
+	cursor: pointer;
+	float: right;
+}
+.img-buscar{
+	width: 30px;
+}
+/* container localidade */
+.localidade{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.cidade{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+.descricaoCidade{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+/* container localidade */
+.container-país{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.país{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+.paísAbreviacao{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+.container-horario{
+	background-color: #c6f7b553;
+	border-radius: 35px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.horario{
+	color: #46fc0e;
+	font-size: 24px;
+	text-align: center;
+}
+
+
+
+
+/* container menor */
+.container-menor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+.texto-previsao{
+	color: #ffffff;
+	font-size: 24px;
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+/* Container temperatura */
+.container-temperatura{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.temperatura{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+}
+.temperaturaNumero{
+	font-size: 24px;
+	color: #ffffff;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+/* container umidade */
+.container-umidade{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.umidade{
+	color: #ffffff;
+	font-size: 24px;
+	margin-top: 20px;
+}
+.umidadeNumero{
+	color: #ffffff;
+	font-size: 24px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+
+/* Responsividade  */
+@media (max-width:400px){
+	
+	.input-cidade{
+		font-size: 16px;
+	}
+	.img-buscar{
+		width: 15px;
+	}
+	.cidade{
+		font-size: 14px;
+	}
+	.descricaoCidade{
+		font-size: 14px;
+	}
+	.país{
+		font-size: 14px;
+	}
+	.paísAbreviacao{
+		font-size: 14px;
+	}
+	.horario{
+		font-size: 14px;
+	}
+	.texto-previsao{
+		font-size: 14px;
+	}
+	.temperatura{
+		font-size: 14px;		
+	}
+	.temperaturaNumero{
+		font-size: 14px;		
+	}
+	.umidade{
+		font-size: 14px;
+	}
+	.umidadeNumero{
+		font-size: 14px;
+	}
+	
+
+}
+
+
