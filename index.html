@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!------------------------links para API da fonte ------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&family=Open+Sans:wght@300;500;700&family=Signika:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-	<!------------------------links para API do jquery ------------------------>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-	<!------------------links para o arquivo de Estilização ------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&family=Open+Sans:wght@300;500;700&family=Signika:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" href="style.css" />
-	<!----------------------------Título da Página ---------------------------->
     <title>EHS - Previsão do Tempo</title>
-  </head>
-
-
-  <body>
+</head>
+<body>
     <div class="container" id="idContainer">
+        <input class="input-cidade" placeholder="Digite o nome da Cidade" type="text" />
+        <button onclick="pesquisar()" class="button-buscar"><img class="img-buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Icone de uma lupa"></button>
 
-	<!------Campo de pesquisa contendo INPUT e um BUTTON para efetivar a pesquisa------->
-      <input class="input-cidade" placeholder="Digite o nome da Cidade" type="text" />
-      <button onclick="pesquisar()" class="button-buscar"><img class="img-buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Icone de uma lupa"></button>
+        <div class="localidade">
+            <p class="cidade">Tempo em: </p><h3 class="descricaoCidade">sua Cidade</h3>		
+        </div>
+        <div class="container-país">
+            <p class="país">País: </p><h3 class="paísAbreviacao">BR</h3>
+        </div>
+        <div class="container-horario">
+            <img src="" alt="">
+            <h3 class="horario">Horario Atual: 23:05</h3>
+        </div>
+        <div class="container-menor">
+            <img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="ícone do tempo"/>
+            <p class="texto-previsao">Nublado</p>
+        </div>
 
-
-	  <div class="localidade">
-		<p class="cidade">Tempo em: </p><h3 class="descricaoCidade">sua Cidade</h3>		
-	  </div>
-	  <div - class="container-país">
-		<p class="país">País: </p><h3 class="paísAbreviacao">BR</h3>
-	  </div>
-
-	  <div - class="container-horario">
-		<img src="" alt="">
-		<h3 class="horario">Horario Atual: 23:05</h3>
-	  </div>
-	  <div class="container-menor">
-		<img class="img-previsao" src="https://openweathermap.org/img/wn/04n.png" alt="ícone do tempo"/>
-		  <p class="texto-previsao">Nublado</p>
-	  </div>
-      
-		
-	  
-	  
-	  <div class="container-temperatura">
-		<p class="temperatura">Temperatura: </p><h4 class="temperaturaNumero">21°C</h4>
-	  </div>
-	  <div class="container-umidade">
-		<p class="umidade">Umidade: </p><h4 class="umidadeNumero">76%</h4>
-	  </div>
-	  
+        <div class="container-temperatura">
+            <p class="temperatura">Temperatura: </p><h4 class="temperaturaNumero">21°C</h4>
+        </div>
+        <div class="container-umidade">
+            <p class="umidade">Umidade: </p><h4 class="umidadeNumero">76%</h4>
+        </div>
     </div>
-	<script src="./script.js"></script>
-  </body>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+</body>
 </html>
